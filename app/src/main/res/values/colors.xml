@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- === Efficient Velocity Design System (Light Mode) === -->
+
+    <!-- Primary Colors - Deep Blue -->
+    <color name="primary">#005BBF</color>
+    <color name="primary_dark">#004493</color>
+    <color name="primary_light">#ADC7FF</color>
+    <color name="primary_variant">#004493</color>
+    <color name="primary_container">#1A73E8</color>
+    <color name="on_primary_container">#FFFFFF</color>
+    <color name="primary_fixed">#D8E2FF</color>
+    <color name="primary_fixed_dim">#ADC7FF</color>
+    <color name="on_primary_fixed">#001A41</color>
+    <color name="on_primary_fixed_variant">#004493</color>
+
+    <!-- Secondary Colors - Soft Gray -->
+    <color name="secondary">#5C5F60</color>
+    <color name="secondary_dark">#444748</color>
+    <color name="secondary_variant">#444748</color>
+    <color name="secondary_container">#DEE0E1</color>
+    <color name="on_secondary_container">#606364</color>
+    <color name="secondary_fixed">#E1E3E4</color>
+    <color name="secondary_fixed_dim">#C4C7C8</color>
+
+    <!-- Tertiary - Green -->
+    <color name="tertiary">#006D2C</color>
+    <color name="tertiary_container">#008939</color>
+    <color name="on_tertiary_container">#FFFFFF</color>
+
+    <!-- Background & Surface - Light -->
+    <color name="background">#FAF9FD</color>
+    <color name="background_dark">#FAF9FD</color>
+    <color name="surface">#FAF9FD</color>
+    <color name="surface_bright">#FAF9FD</color>
+    <color name="surface_dim">#DBD9DD</color>
+    <color name="surface_dark">#FAF9FD</color>
+    <color name="surface_variant">#E3E2E6</color>
+    <color name="surface_variant_dark">#E3E2E6</color>
+    <color name="surface_tint">#005BC0</color>
+
+    <!-- Surface Containers -->
+    <color name="surface_container_lowest">#FFFFFF</color>
+    <color name="surface_container_low">#F4F3F7</color>
+    <color name="surface_container">#EFEDF1</color>
+    <color name="surface_container_high">#E9E7EB</color>
+    <color name="surface_container_highest">#E3E2E6</color>
+
+    <!-- Legacy card aliases -->
+    <color name="card_dark">#FFFFFF</color>
+    <color name="card_light">#FFFFFF</color>
+    <color name="background_light">#FAF9FD</color>
+    <color name="surface_light">#FFFFFF</color>
+
+    <!-- On-Surface Text -->
+    <color name="on_surface">#1A1B1E</color>
+    <color name="on_surface_variant">#414754</color>
+    <color name="on_background">#1A1B1E</color>
+
+    <!-- Inverse -->
+    <color name="inverse_surface">#2F3033</color>
+    <color name="inverse_on_surface">#F1F0F4</color>
+    <color name="inverse_primary">#ADC7FF</color>
+
+    <!-- Outline -->
+    <color name="outline">#727785</color>
+    <color name="outline_variant">#C1C6D6</color>
+
+    <!-- Text Colors (legacy aliases) -->
+    <color name="text_primary_dark">#1A1B1E</color>
+    <color name="text_secondary_dark">#414754</color>
+    <color name="text_primary_light">#1A1B1E</color>
+    <color name="text_secondary_light">#414754</color>
+
+    <!-- Priority Colors -->
+    <color name="priority_high">#F44336</color>
+    <color name="priority_medium">#FF9800</color>
+    <color name="priority_low">#4CAF50</color>
+
+    <!-- Status Colors -->
+    <color name="completed">#006D2C</color>
+    <color name="pending">#FF9800</color>
+    <color name="overdue">#BA1A1A</color>
+
+    <!-- Category Colors -->
+    <color name="cat_work">#2196F3</color>
+    <color name="cat_study">#9C27B0</color>
+    <color name="cat_personal">#FF9800</color>
+    <color name="cat_shopping">#E91E63</color>
+    <color name="cat_travel">#00BCD4</color>
+    <color name="cat_health">#4CAF50</color>
+
+    <!-- Error Colors -->
+    <color name="error">#BA1A1A</color>
+    <color name="error_container">#FFDAD6</color>
+    <color name="on_error">#FFFFFF</color>
+
+    <!-- Common -->
+    <color name="on_primary">#FFFFFF</color>
+    <color name="divider">#C1C6D6</color>
+    <color name="ripple">#1F005BBF</color>
+    <color name="transparent">#00000000</color>
+    <color name="overlay">#80000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Bottom Nav -->
+    <color name="bottom_nav_active">#005BBF</color>
+    <color name="bottom_nav_inactive">#727785</color>
+</resources>

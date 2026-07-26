@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Outer circle background -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M60,10 C32.4,10 10,32.4 10,60 C10,87.6 32.4,110 60,110 C87.6,110 110,87.6 110,60 C110,32.4 87.6,10 60,10Z" />
+
+    <!-- Checkmark / tick icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,60 L52,74 L82,44"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- Task lines decoration -->
+    <path
+        android:fillColor="#80FFFFFF"
+        android:pathData="M35,35 L55,35 Q57,35 57,37 L57,39 Q57,41 55,41 L35,41 Q33,41 33,39 L33,37 Q33,35 35,35Z" />
+    <path
+        android:fillColor="#80FFFFFF"
+        android:pathData="M35,80 L75,80 Q77,80 77,82 L77,84 Q77,86 75,86 L35,86 Q33,86 33,84 L33,82 Q33,80 35,80Z" />
+</vector>

@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">Smart TODO</string>
+
+    <!-- Auth -->
+    <string name="login">Đăng nhập</string>
+    <string name="register">Đăng ký</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="forgot_password">Quên mật khẩu</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="full_name">Họ và tên</string>
+    <string name="dont_have_account">Chưa có tài khoản? Đăng ký</string>
+    <string name="already_have_account">Đã có tài khoản? Đăng nhập</string>
+    <string name="send_reset_email">Gửi email đặt lại</string>
+    <string name="back_to_login">Quay lại đăng nhập</string>
+
+    <!-- Task -->
+    <string name="add_task">Thêm Task</string>
+    <string name="edit_task">Sửa Task</string>
+    <string name="task_detail">Chi tiết Task</string>
+    <string name="task_title">Tiêu đề</string>
+    <string name="task_description">Mô tả</string>
+    <string name="task_category">Danh mục</string>
+    <string name="task_priority">Độ ưu tiên</string>
+    <string name="task_deadline">Hạn chót</string>
+    <string name="task_reminder">Nhắc nhở</string>
+    <string name="task_image">Ảnh đính kèm</string>
+    <string name="save_task">Lưu Task</string>
+    <string name="delete_task">Xóa Task</string>
+    <string name="mark_complete">Đánh dấu hoàn thành</string>
+    <string name="mark_incomplete">Đánh dấu chưa xong</string>
+
+    <!-- Priority -->
+    <string name="priority_high">Cao</string>
+    <string name="priority_medium">Trung bình</string>
+    <string name="priority_low">Thấp</string>
+
+    <!-- Category -->
+    <string name="categories">Danh mục</string>
+    <string name="add_category">Thêm danh mục</string>
+    <string name="category_name">Tên danh mục</string>
+    <string name="category_color">Màu sắc</string>
+
+    <!-- Home -->
+    <string name="home">Trang chủ</string>
+    <string name="all_tasks">Tất cả Task</string>
+    <string name="today_tasks">Task hôm nay</string>
+    <string name="search_tasks">Tìm kiếm task...</string>
+    <string name="no_tasks">Không có task nào</string>
+    <string name="filter">Lọc</string>
+
+    <!-- Profile -->
+    <string name="profile">Hồ sơ</string>
+    <string name="change_avatar">Đổi ảnh đại diện</string>
+    <string name="edit_profile">Sửa hồ sơ</string>
+
+    <!-- Statistics -->
+    <string name="statistics">Thống kê</string>
+    <string name="total_tasks">Tổng Task</string>
+    <string name="completed_tasks">Đã hoàn thành</string>
+    <string name="pending_tasks">Chưa hoàn thành</string>
+    <string name="completion_rate">Tỷ lệ hoàn thành</string>
+
+    <!-- Widget -->
+    <string name="widget_title">Smart TODO</string>
+    <string name="widget_refresh">Làm mới</string>
+    <string name="widget_no_tasks">Không có task hôm nay</string>
+
+    <!-- Notification -->
+    <string name="notification_channel_id">smart_todo_reminder</string>
+    <string name="notification_channel_name">Task Reminder</string>
+    <string name="notification_channel_desc">Nhắc nhở task từ Smart TODO</string>
+
+    <!-- Messages -->
+    <string name="error_empty_title">Tiêu đề không được để trống</string>
+    <string name="error_empty_category">Vui lòng chọn danh mục</string>
+    <string name="error_invalid_deadline">Hạn chót phải lớn hơn thời gian hiện tại</string>
+    <string name="error_empty_email">Email không được để trống</string>
+    <string name="error_invalid_email">Email không hợp lệ</string>
+    <string name="error_empty_password">Mật khẩu không được để trống</string>
+    <string name="error_short_password">Mật khẩu phải có ít nhất 6 ký tự</string>
+    <string name="error_password_mismatch">Mật khẩu không khớp</string>
+    <string name="error_empty_name">Tên không được để trống</string>
+    <string name="task_saved">Task đã được lưu</string>
+    <string name="task_deleted">Task đã bị xóa</string>
+    <string name="task_updated">Task đã được cập nhật</string>
+    <string name="login_success">Đăng nhập thành công</string>
+    <string name="register_success">Đăng ký thành công</string>
+    <string name="reset_email_sent">Email đặt lại mật khẩu đã được gửi</string>
+    <string name="logout_confirm">Bạn có chắc muốn đăng xuất?</string>
+    <string name="delete_confirm">Bạn có chắc muốn xóa task này?</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="cancel">Hủy</string>
+    <string name="ok">OK</string>
+    <string name="loading">Đang tải...</string>
+    <string name="select_image">Chọn ảnh</string>
+    <string name="take_photo">Chụp ảnh</string>
+    <string name="choose_gallery">Chọn từ thư viện</string>
+    <string name="select_date">Chọn ngày</string>
+    <string name="select_time">Chọn giờ</string>
+    <string name="no_deadline">Chưa có hạn chót</string>
+    <string name="no_reminder">Chưa có nhắc nhở</string>
+
+    <!-- Filter -->
+    <string name="filter_by_category">Lọc theo danh mục</string>
+    <string name="filter_by_priority">Lọc theo độ ưu tiên</string>
+    <string name="filter_by_status">Lọc theo trạng thái</string>
+    <string name="all">Tất cả</string>
+    <string name="completed">Hoàn thành</string>
+    <string name="pending">Chưa hoàn thành</string>
+    <string name="apply_filter">Áp dụng</string>
+    <string name="clear_filter">Xóa bộ lọc</string>
+</resources>
