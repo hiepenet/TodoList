@@ -192,7 +192,10 @@ public class AddTaskActivity extends AppCompatActivity {
         binding.btnGallery.setOnClickListener(v -> openGallery());
 
         // Save
-        binding.btnSave.setOnClickListener(v -> saveTask());
+        binding.btnSave.setOnClickListener(v -> {
+            v.performHapticFeedback(android.view.HapticFeedbackConstants.VIRTUAL_KEY);
+            saveTask();
+        });
 
         // Recurrence
         binding.btnSelectRecurrence.setOnClickListener(v -> showRecurrencePicker());

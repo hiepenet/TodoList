@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dialog_recurrence_picker.xml - Dialog chọn kiểu lặp lại -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔄 Chọn kiểu lặp lại"
+        android:textColor="@color/on_surface"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="12dp"
+        android:background="@color/outline_variant" />
+
+    <!-- Recurrence Type RadioGroup -->
+    <RadioGroup
+        android:id="@+id/rgRecurrenceType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbNone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Không lặp lại"
+            android:textColor="@color/on_surface"
+            android:textSize="15sp"
+            android:checked="true"
+            android:buttonTint="@color/primary" />
+
+        <RadioButton
+            android:id="@+id/rbDaily"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="📅 Hàng ngày"
+            android:textColor="@color/on_surface"
+            android:textSize="15sp"
+            android:buttonTint="@color/primary" />
+
+        <RadioButton
+            android:id="@+id/rbWeekly"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="📆 Hàng tuần"
+            android:textColor="@color/on_surface"
+            android:textSize="15sp"
+            android:buttonTint="@color/primary" />
+
+        <RadioButton
+            android:id="@+id/rbMonthly"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="🗓️ Hàng tháng"
+            android:textColor="@color/on_surface"
+            android:textSize="15sp"
+            android:buttonTint="@color/primary" />
+
+        <RadioButton
+            android:id="@+id/rbCustom"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="⚙️ Tùy chỉnh"
+            android:textColor="@color/on_surface"
+            android:textSize="15sp"
+            android:buttonTint="@color/primary" />
+    </RadioGroup>
+
+    <!-- Custom Interval (shown when "Tùy chỉnh" is selected) -->
+    <LinearLayout
+        android:id="@+id/layoutCustomInterval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mỗi"
+            android:textColor="@color/on_surface"
+            android:textSize="15sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etInterval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="2"
+                android:textAlignment="center"
+                android:textColor="@color/on_surface"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ngày"
+            android:textColor="@color/on_surface"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

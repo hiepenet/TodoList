@@ -185,6 +185,7 @@ public class TaskDetailActivity extends AppCompatActivity {
         });
 
         binding.btnToggleComplete.setOnClickListener(v -> {
+            v.performHapticFeedback(android.view.HapticFeedbackConstants.VIRTUAL_KEY);
             if (currentTask != null) {
                 boolean newState = !currentTask.isCompleted();
                 if (newState && currentTask.hasSubtasks() && currentTask.getSubtaskCompleted() < currentTask.getSubtaskCount()) {

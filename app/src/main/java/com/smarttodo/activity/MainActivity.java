@@ -158,7 +158,12 @@ public class MainActivity extends AppCompatActivity {
 
         // Observe filtered tasks để hiển thị lên UI
         taskViewModel.filteredTasks.observe(this, tasks -> {
-            taskAdapter.submitList(tasks);
+            boolean wasEmpty = taskAdapter.getCurrentList().isEmpty();
+            taskAdapter.submitList(tasks, () -> {
+                if (wasEmpty && tasks != null && !tasks.isEmpty()) {
+                    binding.recyclerViewTasks.scheduleLayoutAnimation();
+                }
+            });
             updateEmptyState(tasks);
         });
 
@@ -210,6 +215,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, StatisticsActivity.class));
         });
 
+        // Calendar button
+        binding.btnCalendar.setOnClickListener(v -> {
+            startActivity(new Intent(this, CalendarActivity.class));
+        });
+
         // Filter button
         binding.btnFilter.setOnClickListener(v -> showFilterDialog());
 
@@ -230,7 +240,22 @@ public class MainActivity extends AppCompatActivity {
 
         // "Tất cả" chip
         binding.chipAll.setOnClickListener(v -> {
+            taskViewModel.setFilterToday(false);
             taskViewModel.setFilterCategory(null);
+        });
+
+        // "Hôm nay" chip
+        binding.chipMyDay.setOnClickListener(v -> {
+            taskViewModel.setFilterToday(true);
+            taskViewModel.setFilterCategory(null);
+        });
+
+        // Sort button
+        binding.btnSort.setOnClickListener(v -> showSortDialog());
+
+        // FAB Add Task
+        binding.fabAddTask.setOnClickListener(v -> {
+            startActivity(new Intent(this, AddTaskActivity.class));
         });
     }
 
@@ -242,9 +267,6 @@ public class MainActivity extends AppCompatActivity {
             int id = item.getItemId();
             if (id == com.smarttodo.R.id.nav_home) {
                 return true;
-            } else if (id == com.smarttodo.R.id.nav_add_task) {
-                startActivity(new Intent(this, AddTaskActivity.class));
-                return false;
             } else if (id == com.smarttodo.R.id.nav_profile) {
                 startActivity(new Intent(this, ProfileActivity.class));
                 return true;
@@ -270,10 +292,10 @@ public class MainActivity extends AppCompatActivity {
      * Build dynamic category filter chips
      */
     private void buildCategoryChips(List<Category> categories) {
-        // Xóa chips cũ (trừ "Tất cả")
+        // Xóa chips cũ (trừ "Tất cả" và "Hôm nay")
         int childCount = binding.chipGroupCategory.getChildCount();
-        if (childCount > 1) {
-            binding.chipGroupCategory.removeViews(1, childCount - 1);
+        if (childCount > 2) {
+            binding.chipGroupCategory.removeViews(2, childCount - 2);
         }
 
         // Thêm chip cho mỗi category
@@ -360,6 +382,19 @@ public class MainActivity extends AppCompatActivity {
                 .setTitle("Lọc theo độ ưu tiên")
                 .setItems(priorities, (dialog, which) -> {
                     taskViewModel.setFilterPriority(which); // 0=all, 1=high, 2=medium, 3=low
+                })
+                .show();
+    }
+
+    /**
+     * Hiển thị Sort Dialog
+     */
+    private void showSortDialog() {
+        String[] options = {"Mới nhất", "Gần hạn chót nhất", "Ưu tiên cao nhất", "Tên (A-Z)"};
+        new androidx.appcompat.app.AlertDialog.Builder(this)
+                .setTitle("Sắp xếp công việc")
+                .setItems(options, (dialog, which) -> {
+                    taskViewModel.setSortOption(which);
                 })
                 .show();
     }
