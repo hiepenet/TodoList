@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- === Dark Mode Color System === -->
+
+    <!-- Primary Colors - Electric Blue Accent on Dark -->
+    <color name="primary">#3B82F6</color>
+    <color name="primary_dark">#2563EB</color>
+    <color name="primary_light">#93C5FD</color>
+    <color name="primary_variant">#2563EB</color>
+    <color name="primary_container">#1E293B</color>
+    <color name="on_primary_container">#93C5FD</color>
+
+    <!-- Secondary Colors -->
+    <color name="secondary">#94A3B8</color>
+    <color name="secondary_dark">#64748B</color>
+    <color name="secondary_variant">#64748B</color>
+    <color name="secondary_container">#334155</color>
+    <color name="on_secondary_container">#CBD5E1</color>
+
+    <!-- Tertiary - Emerald -->
+    <color name="tertiary">#10B981</color>
+    <color name="tertiary_container">#064E3B</color>
+    <color name="on_tertiary_container">#A7F3D0</color>
+
+    <!-- Background & Surface - Dark Mode -->
+    <color name="background">#121212</color>
+    <color name="background_dark">#121212</color>
+    <color name="surface">#1E1E1E</color>
+    <color name="surface_bright">#2C2C2C</color>
+    <color name="surface_dim">#121212</color>
+    <color name="surface_dark">#121212</color>
+    <color name="surface_variant">#2A2A2A</color>
+    <color name="surface_tint">#3B82F6</color>
+
+    <!-- Surface Containers -->
+    <color name="surface_container_lowest">#1E1E1E</color>
+    <color name="surface_container_low">#252525</color>
+    <color name="surface_container">#2C2C2C</color>
+    <color name="surface_container_high">#333333</color>
+    <color name="surface_container_highest">#3D3D3D</color>
+
+    <!-- Legacy card aliases -->
+    <color name="card_dark">#252525</color>
+    <color name="card_light">#252525</color>
+    <color name="background_light">#121212</color>
+    <color name="surface_light">#1E1E1E</color>
+
+    <!-- On-Surface Text -->
+    <color name="on_surface">#FFFFFF</color>
+    <color name="on_surface_variant">#AAAAAA</color>
+    <color name="on_background">#FFFFFF</color>
+
+    <!-- Inverse -->
+    <color name="inverse_surface">#F8FAFC</color>
+    <color name="inverse_on_surface">#0F172A</color>
+    <color name="inverse_primary">#2563EB</color>
+
+    <!-- Outline -->
+    <color name="outline">#666666</color>
+    <color name="outline_variant">#333333</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="text_secondary_dark">#AAAAAA</color>
+    <color name="text_primary_light">#FFFFFF</color>
+    <color name="text_secondary_light">#AAAAAA</color>
+
+    <!-- Priority Colors -->
+    <color name="priority_high">#EF4444</color>
+    <color name="priority_high_bg">#33EF4444</color>
+    <color name="priority_high_text">#FCA5A5</color>
+
+    <color name="priority_medium">#F59E0B</color>
+    <color name="priority_medium_bg">#33F59E0B</color>
+    <color name="priority_medium_text">#FDE68A</color>
+
+    <color name="priority_low">#10B981</color>
+    <color name="priority_low_bg">#3310B981</color>
+    <color name="priority_low_text">#6EE7B7</color>
+
+    <!-- Status Colors -->
+    <color name="completed">#10B981</color>
+    <color name="pending">#F59E0B</color>
+    <color name="overdue">#EF4444</color>
+
+    <!-- Error Colors -->
+    <color name="error">#EF4444</color>
+    <color name="error_container">#450A0A</color>
+    <color name="on_error">#FFFFFF</color>
+
+    <!-- Common -->
+    <color name="on_primary">#FFFFFF</color>
+    <color name="divider">#333333</color>
+    <color name="ripple">#33FFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Bottom Nav -->
+    <color name="bottom_nav_active">#3B82F6</color>
+    <color name="bottom_nav_inactive">#888888</color>
+</resources>
