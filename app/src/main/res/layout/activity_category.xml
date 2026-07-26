@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="Danh mục"
+        app:titleTextColor="@color/on_surface" />
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/outline_variant" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCategories"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingVertical="8dp" />
+
+    <!-- Empty state -->
+    <LinearLayout
+        android:id="@+id/layoutEmptyState"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+        <ImageView android:layout_width="80dp" android:layout_height="80dp"
+            android:src="@drawable/ic_category" android:alpha="0.3"
+            android:contentDescription="No categories" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="Chưa có danh mục"
+            android:textColor="@color/on_surface_variant" android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- FAB -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:backgroundTint="@color/primary"
+        android:src="@drawable/ic_add"
+        app:tint="@color/white"
+        android:contentDescription="Thêm danh mục" />
+
+</LinearLayout>
