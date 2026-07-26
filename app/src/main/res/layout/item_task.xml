@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- item_task.xml - Efficient Velocity Design: White card + border + deep blue accents -->
-<com.google.android.material.card.MaterialCardView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="16dp"
-    android:layout_marginVertical="6dp"
-    app:cardBackgroundColor="@color/surface_container_lowest"
-    app:cardCornerRadius="16dp"
-    app:cardElevation="2dp"
-    app:strokeColor="@color/outline_variant"
-    app:strokeWidth="1dp">
+    android:orientation="vertical"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:paddingHorizontal="20dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
 
         <!-- Top Row: Complete Button + Title + Delete -->
         <LinearLayout
@@ -29,8 +27,8 @@
             <!-- Complete toggle button (Circular Checkbox) -->
             <CheckBox
                 android:id="@+id/btnComplete"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
                 android:background="@android:color/transparent"
                 android:button="@drawable/selector_checkbox_circle"
                 android:buttonTint="@color/primary"
@@ -42,10 +40,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_marginHorizontal="10dp"
+                android:layout_marginHorizontal="12dp"
                 android:textColor="@color/on_surface"
                 android:textSize="16sp"
-                android:textStyle="bold"
                 android:maxLines="2"
                 android:ellipsize="end" />
 
@@ -54,8 +51,8 @@
                 android:id="@+id/btnDelete"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:background="@android:color/transparent"
-                android:padding="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="6dp"
                 android:src="@drawable/ic_delete"
                 android:tint="@color/outline"
                 android:contentDescription="Xóa task" />
@@ -67,22 +64,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:layout_marginStart="42dp"
+            android:layout_marginStart="40dp"
             android:textColor="@color/on_surface_variant"
-            android:textSize="13sp"
+            android:textSize="14sp"
             android:maxLines="2"
             android:ellipsize="end"
             android:visibility="gone" />
 
-        <!-- Subtask Progress (hiển thị khi có subtask) -->
+        <!-- Subtask Progress -->
         <LinearLayout
             android:id="@+id/layoutSubtaskProgress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_marginTop="6dp"
-            android:layout_marginStart="42dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="40dp"
             android:visibility="gone">
 
             <ProgressBar
@@ -99,10 +96,9 @@
                 android:id="@+id/tvSubtaskCount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="12dp"
                 android:textColor="@color/on_surface_variant"
-                android:textSize="11sp"
-                android:textStyle="bold" />
+                android:textSize="12sp" />
         </LinearLayout>
 
         <!-- Task Image (optional) -->
@@ -110,8 +106,8 @@
             android:id="@+id/ivTaskImage"
             android:layout_width="match_parent"
             android:layout_height="160dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="42dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="40dp"
             android:scaleType="centerCrop"
             android:background="@drawable/bg_card"
             android:contentDescription="Task image"
@@ -123,7 +119,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="10dp"
-            android:layout_marginStart="42dp"
+            android:layout_marginStart="40dp"
             android:gravity="center_vertical">
 
             <!-- Priority Badge -->
@@ -131,10 +127,9 @@
                 android:id="@+id/tvPriority"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingHorizontal="10dp"
-                android:paddingVertical="4dp"
-                android:textSize="11sp"
-                android:textStyle="bold"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="2dp"
+                android:textSize="12sp"
                 android:background="@drawable/bg_priority_low" />
 
             <!-- Category Badge -->
@@ -142,10 +137,10 @@
                 android:id="@+id/tvCategory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="6dp"
-                android:paddingHorizontal="10dp"
-                android:paddingVertical="4dp"
-                android:textSize="11sp"
+                android:layout_marginStart="8dp"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="2dp"
+                android:textSize="12sp"
                 android:background="@drawable/bg_priority_low"
                 android:visibility="gone" />
 
@@ -154,10 +149,10 @@
                 android:id="@+id/tvRecurrence"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="6dp"
+                android:layout_marginStart="8dp"
                 android:paddingHorizontal="8dp"
-                android:paddingVertical="4dp"
-                android:textSize="11sp"
+                android:paddingVertical="2dp"
+                android:textSize="12sp"
                 android:textColor="#1565C0"
                 android:background="@drawable/bg_priority_low"
                 android:visibility="gone" />
@@ -174,8 +169,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/on_surface_variant"
-                android:textSize="11sp"
+                android:textSize="12sp"
                 android:visibility="gone" />
         </LinearLayout>
     </LinearLayout>
-</com.google.android.material.card.MaterialCardView>
+
+    <!-- Divider (Bottom Border) -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/outline_variant" />
+
+</LinearLayout>
