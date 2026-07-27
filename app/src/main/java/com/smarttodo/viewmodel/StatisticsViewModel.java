@@ -63,7 +63,7 @@ public class StatisticsViewModel extends ViewModel {
                         for (QueryDocumentSnapshot doc : snapshots) {
                             try {
                                 Task task = doc.toObject(Task.class);
-                                if (task != null) {
+                                if (task != null && task.getDeletedAt() == null) {
                                     task.setTaskId(doc.getId());
                                     tasks.add(task);
                                 }
